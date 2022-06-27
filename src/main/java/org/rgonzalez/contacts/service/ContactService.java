@@ -15,4 +15,9 @@ public class ContactService{
 		return contactsRepository.saveAndFlush(contact);
 	}
 	
+	
+	public Contact get(Long id) {
+		return contactsRepository.getById(id);
+	}
+	
 }
